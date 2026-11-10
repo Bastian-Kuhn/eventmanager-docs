@@ -1,0 +1,79 @@
+site_name: Tourenanmeldung Dokumentation
+site_description: Installation, Konfiguration und Bedienung der Tourenanmeldung für Vereine
+site_url: https://docs.tourenanmeldung.de/
+repo_url: https://github.com/bastian-kuhn/eventmanager
+edit_uri: ""
+
+nav:
+  - Überblick: index.md
+  - Installation:
+    - Lokal mit Docker: installation/docker.md
+    - Produktion mit Docker Compose: installation/production.md
+    - Ohne Docker: installation/standalone.md
+    - Erste Schritte: installation/first_steps.md
+    - Update und Backup: installation/updates.md
+  - Konfiguration:
+    - Einstellungen im Admin: config/settings.md
+    - Server-Konfiguration: config/server.md
+  - Bedienung:
+    - Für Teilnehmer: usage/participants.md
+    - Für Tourenbegleiter: usage/guides.md
+    - Hütten: usage/huts.md
+    - Für Admins: usage/admins.md
+  - Rollen und Rechte: basics/roles.md
+  - Grenzen und Schutz: basics/limits.md
+  - Betrieb bei Hetzner: operations/hetzner.md
+  - Entwicklung:
+    - Datenmodell: development/data_model.md
+
+# Alte Skelett-Seite: das Paket ist nicht auf PyPI, der Inhalt steht unter "Ohne Docker"
+exclude_docs: |
+  installation/pypi.md
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Dunkles Farbschema einschalten
+      primary: green
+      accent: indigo
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Helles Farbschema einschalten
+      primary: green
+      accent: indigo
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+      permalink_title: Link zu diesem Abschnitt
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang: de
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bastian-kuhn/eventmanager
+      name: Quellcode auf GitHub
