@@ -14,6 +14,7 @@ Der Quellcode steht unter der MIT-Lizenz auf [GitHub](https://github.com/bastian
 - **Abrechnung und Finanzen:** Zahlstatus pro Ticket, Buchungsnummer als Verwendungszweck, Ausgaben der Tour.
 - **Hütten:** Vereinshütten mit Zimmern, Belegungskalender, Selbstbuchung durch Mitglieder und Freigabe durch die Hütten-Verwaltung.
 - **Mitglieder:** Registrierung mit Bestätigung der E-Mail-Adresse, Vereinsrollen, Einwilligungen für Fotos und Kontaktdaten.
+- **Mehrere Sektionen:** eine Installation für mehrere Sektionen oder Vereine, mit Portal, Abo, geteilten Touren und Beitrittsanfragen. Siehe [Sektionen und Konten](basics/sections.md).
 
 ## Aufbau
 
@@ -34,4 +35,4 @@ Das Diagramm in Worten: Der Browser spricht mit nginx, nginx reicht die Anfragen
 - Auf dem eigenen Rechner ausprobieren: [Lokal mit Docker](installation/docker.md)
 - Für den Verein betreiben: [Produktion mit Docker Compose](installation/production.md) und [Betrieb bei Hetzner](operations/hetzner.md)
 - Nach der Installation: [Erste Schritte](installation/first_steps.md)
-- Wer darf was: [Rollen und Rechte](basics/roles.md)
+- Wer darf was: [Rollen und Rechte](basics/roles.md) und [Sektionen und Konten](basics/sections.md)

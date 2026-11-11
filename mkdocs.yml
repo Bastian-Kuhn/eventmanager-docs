@@ -20,6 +20,7 @@ nav:
     - Für Tourenbegleiter: usage/guides.md
     - Hütten: usage/huts.md
     - Für Admins: usage/admins.md
+  - Sektionen und Konten: basics/sections.md
   - Rollen und Rechte: basics/roles.md
   - Grenzen und Schutz: basics/limits.md
   - Betrieb bei Hetzner: operations/hetzner.md

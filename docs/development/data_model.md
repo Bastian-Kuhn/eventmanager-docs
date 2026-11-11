@@ -8,6 +8,9 @@ Die Daten liegen in MongoDB und werden mit MongoEngine gelesen und geschrieben. 
 - **`OwnedTicket.ticket_id`:** UUID, fester Bezug für Änderungen per AJAX.
 - **`User.event_registrations`:** Rückverweis vom Konto auf seine Touren. Er wird von Hand gepflegt. Wer Tickets anlegt oder entfernt, hält beide Seiten gleich.
 - **`Hut`** mit eingebetteten Zimmern (`HutRoom`) und **`HutBooking`** in einer eigenen Collection.
+- **`Section`:** eine Sektion mit Adressen, Aussehen, Mailversand, Abo-Daten, `partner_sections` und `require_approval`. Touren, Hütten und Hüttenbuchungen tragen ein Feld `section`; `objects` liefert nur die der Sektion des Requests, `all_objects` alle.
+- **`User.memberships`:** eingebettete `Membership` je Sektion mit Rolle, Admin-Haken, Mitgliedsnummer und `guest`. `user.role` und `user.admin` lesen die Mitgliedschaft der Sektion des Requests.
+- **`User.join_requests`:** eingebettete `JoinRequest` (Sektion, Mitgliedsnummer, `notified`, Datum) bis die Admins aufnehmen oder ablehnen. Ob ein Konto eingeloggt sein darf, entscheidet `User.may_use_section()`.
 - **`Config`:** die Einstellungen aus dem Admin, siehe [Einstellungen im Admin](../config/settings.md).
 
 Hilfsmethoden auf `Event`: `get_booked_ticket`, `get_tickets_of_user`, `delete_ticket`, `get_ticket_stats`, `get_numbers`. Sie sind besser als eine eigene Schleife über die Teilnahmen.

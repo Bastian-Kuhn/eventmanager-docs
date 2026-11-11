@@ -15,11 +15,15 @@ Zwei Einwilligungen sind freiwillig und lassen sich später im Profil ändern:
 
 Nach dem Registrieren kommt eine Mail mit einem Link. Der Link gilt drei Tage. Auf der Seite hinter dem Link gibt man das Passwort aus der Registrierung ein. Erst danach ist die Anmeldung möglich.
 
+Verlangt die Sektion eine Freigabe, kann man sich erst anmelden, wenn ihre Admins das Konto aufgenommen haben.
+
 Kommt keine Mail an: einige Minuten warten und den Spam-Ordner prüfen. Ein erneutes Registrieren mit derselben Adresse ersetzt die Daten des noch unbestätigten Kontos und schickt einen neuen Link. Pro Adresse gehen höchstens drei Mails in der Stunde raus.
 
 ## Anmelden und Passwort vergessen
 
 Angemeldet wird mit E-Mail-Adresse und Passwort. Mit **Angemeldet bleiben** gilt die Anmeldung 30 Tage, sonst 8 Stunden.
+
+Ein Konto gilt in allen Sektionen, anmelden kann man sich aber nur dort, wo man Mitglied ist, und in Partnersektionen. Bei einer anderen Sektion stellt der Anmeldeversuch eine Beitrittsanfrage an deren Admins. Siehe [Sektionen und Konten](../basics/sections.md#wo-man-sich-anmelden-kann).
 
 Unter **Passwort vergessen** schickt die Anwendung einen Link zum Setzen eines neuen Passworts. Der Link gilt eine Stunde. Ein neues Passwort meldet alle anderen Sitzungen ab.
 

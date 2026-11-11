@@ -6,9 +6,10 @@ Der Admin-Bereich liegt unter `/admin`. In der Navigation erscheint **Admin** f�
 
 | Bereich | Wer ihn sieht | Inhalt |
 | --- | --- | --- |
-| Event | Trainer, Tourenbegleiter, globale Admins | alle Touren als Tabelle. Trainer und Tourenbegleiter sehen nur ihre eigenen. |
+| Event | Trainer, Tourenbegleiter, globale Admins | Übersicht der Touren, neueste oben. Ändern geht hier nicht: jede Zeile verlinkt ins Frontend zu Ansehen, Bearbeiten, Teilnehmer und Abrechnung. |
 | Hütten, Hüttenbuchungen | Trainer, Tourenbegleiter, globale Admins | siehe [Hütten](huts.md) |
 | Mitglieder | Admins und globale Admins | Konten prüfen und Rollen setzen |
+| Beitrittsanfragen | Admins und globale Admins | Konten aufnehmen oder ablehnen, die sich ohne Mitgliedschaft anmelden wollten, siehe [Sektionen und Konten](../basics/sections.md#beitrittsanfragen-bearbeiten) |
 | System, User | globale Admins | alle Felder aller Konten |
 | System, Config | globale Admins | [Einstellungen](../config/settings.md) |
 | System, Log | globale Admins | Protokoll der Anwendung |
@@ -18,6 +19,8 @@ Trainer und Tourenbegleiter ohne Haken **Admin** sehen den Punkt nicht in der Na
 ## Neue Mitglieder prüfen
 
 Wer sich registriert, hat zuerst keine Vereinsrolle. In der Teilnehmerliste steht er als „Nicht überprüft“. Unter **Admin, Mitglieder** setzt ein Admin die Rolle, zum Beispiel nach einem Abgleich mit der Mitgliederliste des Vereins.
+
+Verlangt die Sektion eine Freigabe für neue Mitglieder, stehen Neuregistrierte zuerst unter **Beitrittsanfragen** und erst nach dem Aufnehmen in der Mitgliederliste.
 
 Direkt in der Liste lassen sich ändern: Rolle, Bildfreigabe, Datenfreigabe, Admin und gesperrt (disabled).
 
